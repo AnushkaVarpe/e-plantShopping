@@ -239,7 +239,7 @@ function ProductList({ onViewCartClick }) {
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '1100px',
-    };
+      };      
 
     const styleA = {
         color: 'white',
@@ -262,7 +262,9 @@ function ProductList({ onViewCartClick }) {
                     </div>
                 </div>
                 <div style={styleObjUl}>
-                    <div><a href="#" style={styleA}>Plants</a></div>
+                <div style={{ flex: 1, textAlign: 'center' }}>
+                <a href="#" style={styleA}>Plants</a>
+                </div>
                     <div className="cart-container" onClick={onViewCartClick}>
                         <a href="#" style={styleA}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="IconChangeColor" height="68" width="68">
